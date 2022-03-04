@@ -5,18 +5,14 @@ $baseFontSize: 16px !default;
 
 @import 'mixins';
 
+body {
+  font-size: 16px;
+}
 
-.class {
+
+.Changelog_icon {
   &:before {
-    @include sprite(twitter);
+    @include sprite(Changelog_icon);
     content: '';
-    float: left;
-    margin-right: 0.5em;
-  }
-
-  &:hover {
-    &:before {
-      @include sprite(twitterHover, bg);
-    }
   }
 }
